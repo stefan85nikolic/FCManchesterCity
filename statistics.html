@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Players</title>
+    <meta charset="utf-8" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/main.js"></script>
+
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.9.1/jquery.tablesorter.min.js"></script>
+
+</head>
+<body>
+    <header class="containerHeader">
+        <div class="logo">
+            <img src="img/logo.png" alt="logo" />
+        </div>
+        <div class="headerHeadline">
+            <h1>Manchester City</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="players.html">Players</a></li>
+            <li><a href="matches.html">Matches</a></li>
+            <li  class="selected"><a href="statistics.html">Statistics</a></li>
+            <li><a href="matchReportList.html">Admin</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <table id="tabelStatistics" class="tableList">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>
+                        <img src="img/icons/icon-match.png" alt="Match" title="Total played matches"/></th>
+                    <th>
+                        <img src="img/icons/icon-start.png" alt="Start" title="Start 11"/></th>
+                    <th>
+                        <img src="img/icons/icon-goal.png" alt="Goals" title="Total goals"/></th>
+                    <th>
+                        <img src="img/icons/icon-assist.png" alt="Assist" title="Total assits"/></th>
+                    <th>
+                        <img src="img/icons/icon-yellow.png" alt="Yellow card" title="Total yellow card"/></th>
+                    <th>
+                        <img src="img/icons/icon-red.png" alt="Red card" title="Total red cards"/></th>
+                    <th>
+                        <img src="img/icons/icon-star.png" alt="star" title="Man of the match"/></th>
+                </tr>
+            </thead>
+            <tbody id="bodyTabelStatistics"></tbody>
+        </table>
+
+
+    </main>
+    <footer>
+        <p>Man City  - school project | Copyright &copy; 2016</p>
+        <p>All rights reserved</p>
+    </footer>
+</body>
+</html>

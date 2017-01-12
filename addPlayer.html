@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Players</title>
+    <meta charset="utf-8" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    <header class="containerHeader">
+        <div class="logo">
+            <img src="img/logo.png" alt="logo" />
+        </div>
+        <div class="headerHeadline">
+            <h1>Manchester City</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="players.html">Players</a></li>
+            <li><a href="matches.html">Matches</a></li>
+            <li><a href="statistics.html">Statistics</a></li>
+            <li class="selected"><a href="matchReportList.html" >Admin</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        
+        <nav class="adminNav">
+            <ul>
+                <li><a href="matchReportList.html">Matches</a></li>
+                <li class="selected"><a href="playersList.html" >Players</a></li>
+            </ul>
+        </nav>
+        <section class="adminSeciton">
+            <h2>New player</h2>
+            <form id="addPlayerForm">
+                <div class="formRow">
+                    <label>First name</label>
+                    <input id="inpPlayerFirstName" type="text" placeholder="first name" required /><span class="required">*</span>
+                </div>
+
+                <div class="formRow">
+                    <label>Last name</label>
+                    <input id="inpPlayerLastName" type="text" placeholder="last name" required /><span class="required">*</span>
+                </div>
+
+                <div class="formRow">
+                    <label>Position</label>
+                    <select id="radioBtnPosition">
+                        <option value="Goalkeeper">Goalkeeper</option>
+                        <option value="Defender">Defender</option>
+                        <option value="Midfielder">Midfielder</option>
+                        <option value="Forward">Forward</option>
+                    </select>
+                </div>
+
+                <div class="formRow">
+                    <label>Date of birth</label>
+                    <input id="inpPlayerBirthDate" type="text" class="timeDateInput" required/><span class="required">*</span>
+                </div>
+
+                <div class="formRow">
+                    <label>Place of birth:</label>
+                    <input id="inpPlayerPlaceBirth" type="text" placeholder="name of place" />
+                </div>
+
+                <div class="formRow">
+                    <label>Nationality:</label>
+                    <input id="inpPlayerNationality" type="text" placeholder="name of country" />
+                </div>
+
+                <div class="formRow">
+                    <label>Height:</label>
+                    <input id="inpPlayerHeight" type="number" placeholder="ex. 183" /><p>cm</p>
+                </div>
+
+                <div class="formRow">
+                    <label>Weight:</label>
+                    <input id="inpPlayerweight" type="number" placeholder="ex. 75" /><p>kg</p>
+                </div>
+
+                <div class="formRow">
+                    <fieldset id="formerClubs">
+                        <legend>Add former clubs: </legend>
+                        <div class="oneFormerClub" id="oneFormerClubID">
+                            <input class="formerClubs" type="text" placeholder="name of the club" />
+                        </div>
+                        <input id="btnAddFormerClub" type="button" value="Add more clubs" class="secBtn"/>
+                        <input id="btnRemoveFormerClub" type="button" value="Remove" class="secBtn" />
+
+                    </fieldset>
+                </div>
+
+                <input type="button" value="Save" class="mainBtn" id="btnSavePlayer" />
+            </form>
+            </section>
+
+
+</main>
+    <footer>
+        <p>Man City  - school project | Copyright &copy; 2016</p>
+        <p>All rights reserved</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Players</title>
+    <meta charset="utf-8" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/main.js"></script>
+
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.9.1/jquery.tablesorter.min.js"></script>
+
+</head>
+<body>
+    <header class="containerHeader">
+        <div class="logo">
+            <img src="img/logo.png" alt="logo" />
+        </div>
+        <div class="headerHeadline">
+            <h1>Manchester City</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="players.html">Players</a></li>
+            <li><a href="matches.html">Matches</a></li>
+            <li><a href="statistics.html">Statistics</a></li>
+            <li class="selected"><a href="matchReportList.html" >Admin</a></li>
+        </ul>
+    </nav>
+  
+
+    <main>
+
+        <nav class="adminNav">
+            <ul>
+                <li><a href="matchReportList.html">Matches</a></li>
+                <li class="selected"><a href="playersList.html" >Players</a></li>
+            </ul>
+        </nav>
+        <section class="adminSeciton">
+            <h2>Team list</h2>
+            <table id="tabelPlayersAdmin" class="tableList">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Mark</th>
+                    </tr>
+                </thead>
+                <tbody id="bodyTabelPlayersAdmin"></tbody>
+            </table>
+
+
+            <input type="button" class="mainBtn" value="Add new player" id="btnAddPlayer" />
+            <input type="button" class="mainBtn" value="Delete player" id="btnRemovePlayer" />
+        </section>
+    </main>
+    <footer>
+        <p>Man City  - school project | Copyright &copy; 2016</p>
+        <p>All rights reserved</p>
+    </footer>
+</body>
+</html>

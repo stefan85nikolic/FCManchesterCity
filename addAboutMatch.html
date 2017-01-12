@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add lineup</title>
+    <meta charset="utf-8" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/main.js"></script>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+   
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.ui.timepicker.addon/1.4.5/jquery-ui-timepicker-addon.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.ui.timepicker.addon/1.4.5/jquery-ui-timepicker-addon.min.css">
+</head>
+<body>
+    <header class="containerHeader">
+        <div class="logo">
+            <img src="img/logo.png" alt="logo" />
+        </div>
+        <div class="headerHeadline">
+            <h1>Manchester City</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="players.html">Players</a></li>
+            <li><a href="matches.html">Matches</a></li>
+            <li><a href="statistics.html">Statistics</a></li>
+            <li class="selected"><a href="matchReportList.html">Admin</a></li>
+        </ul>
+    </nav>
+
+
+    
+    <main>
+        <nav class="adminNav">
+            <ul>
+                <li class="selected"><a href="matchReportList.html"  >Matches</a></li>
+                <li><a href="playersList.html">Players</a></li>
+            </ul>
+        </nav>
+        <section class="adminSeciton">
+            <h2>Step 1: Add info about match:</h2>
+            <form id="addAboutMatch">
+
+                <div class="formRow">
+                    <label>We played against</label>
+                    <input id="inpRivalTeam" type="text" placeholder="team name" pattern="[ a-zA-Z0-9]+[a-zA-Z0-9]+[a-zA-Z0-9 ]" required /> <span class="required">*</span>
+                </div>
+
+                <div class="formRow">
+                    <label>We played as</label>
+                    <select id="radioBtnHomeAway">
+                        <option value="1">Home team</option>
+                        <option value="2">Away team</option>
+                    </select>
+                </div>
+
+                <div class="formRow">
+                    <label>Full-Time Result</label>
+                    <input id="inpFullTimeHome" type="number" min="0" max="30" required /> :
+                    <input id="inpFullTimeAway" type="number" min="0" max="30" required /> <span class="required">*</span>
+                </div>
+
+
+                <div class="formRow">
+                    <label>Half-Time Result</label>
+                    <input id="inpHalfTimeHome" type="number" min="0" max="30" /> :
+                    <input id="inpHalfTimeAway" type="number" min="0" max="30" />
+                </div>
+
+
+                <div class="formRow">
+                    <label>Type of match</label>
+                    <input id="inpMatchType" type="text" placeholder="Sesson/Cup/Friendly " required/> <span class="required">*</span>
+                </div>
+
+
+                <div class="formRow">
+                    <label>Date</label>
+                    <input id="inpMatchDate" type="text" class="timeDateInput" required/> <span class="required">*</span>
+                </div>
+
+
+                <div class="formRow">
+                    <label>Time</label>
+                    <input id="inpMatchTime" type="time" class="timeDateInput" required/> <span class="required">*</span>
+                </div>
+
+
+                <div class="formRow">
+                    <label>Place</label>
+                    <input id="inpMatchPlace" type="text" placeholder="name of the city" required/> <span class="required">*</span>
+                </div>
+
+
+                <div class="formRow">
+                    <label>Arena</label>
+                    <input id="inpArena" type="text" placeholder="name of arena" required /> <span class="required">*</span>
+                </div>
+
+
+                <div class="formRow">
+                    <label>Attendance</label>
+                    <input id="inpAttendance" type="number" min="0" max="200000" required /> <span class="required">*</span>
+                </div>
+
+               <input type="button" id="btnAboutMatchSave" value="Save" class="mainBtn" />
+            </form>
+         </section>
+</main>
+    <footer>
+        <p>Man City  - school project | Copyright &copy; 2016</p>
+        <p>All rights reserved</p>
+    </footer>
+</body>
+</html>

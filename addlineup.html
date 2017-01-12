@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add lineup</title>
+    <meta charset="utf-8" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <header class="containerHeader">
+        <div class="logo">
+            <img src="img/logo.png" alt="logo" />
+        </div>
+        <div class="headerHeadline">
+            <h1>Manchester City</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="players.html">Players</a></li>
+            <li><a href="matches.html">Matches</a></li>
+            <li><a href="statistics.html">Statistics</a></li>
+            <li class="selected"><a href="matchReportList.html" >Admin</a></li>
+        </ul>
+    </nav>
+   
+    <main>
+        <nav class="adminNav">
+            <ul>
+                <li class="selected"><a href="matchReportList.html" >Matches</a></li>
+                <li><a href="playersList.html" >Players</a></li>
+            </ul>
+        </nav>
+        <section class="adminSeciton">
+            <h2>Step 2: Lineup and activities</h2>
+            <form id="addLineup">
+                <div id='error_message_addAboutMatch' class="errorMessage">
+                    <p id="pErrorMatch"></p>
+                </div>
+
+                <fieldset id="addPlayersFormStar11">
+                    <legend>Start 11</legend>
+                    <div id="numOFminLbl"><label>Enter number of minutes for each player activity </label></div>
+                    <div id="labelsAddLinup">
+                        <div class="inpDivName"><label>Player name</label></div>
+                        <div class="inpDivSmall"><img src="img/icons/icon-captain.png" alt="captain" title="Captain"/></div>
+                        <div class="inpDivSmall"><img src="img/icons/icon-yellow.png" alt="yellow card" title="Yellow card"/></div>
+                        <div class="inpDivSmall"><img src="img/icons/icon-second-yellow.png" alt="second yellow card" title="Second yellow card"/> </div>
+                        <div class="inpDivSmall"><img src="img/icons/icon-red.png" alt="red card" title="Red card"/></div>
+                        <div class="inpDivSmall"><img src="img/icons/icon-in.png" alt="in game" title="In game "/></div>
+                        <div class="inpDivSmall"><img src="img/icons/icon-out.png" alt="out game" title="Out of game"/></div>
+                    </div>
+                </fieldset>
+
+                <fieldset id="addPlayersFormReserves">
+                    <legend>Substitutes</legend>
+                </fieldset>
+                <fieldset id="addPlayersFormBestPlayer">
+                    <legend>Man of the match</legend>
+                    <label>The best player in our team was: </label>
+                    <select id="dropdownManOfTheMatch"></select>
+                </fieldset>
+                <fieldset id="addWhoScored">
+                </fieldset>
+
+                <input type="button" class="mainBtn" id="btnAddLineupSave" value="Save" />
+            </form>
+            </section>
+</main>
+    <footer>
+        <p>Man City  - school project | Copyright &copy; 2016</p>
+        <p>All rights reserved</p>
+    </footer>
+</body>
+</html>
