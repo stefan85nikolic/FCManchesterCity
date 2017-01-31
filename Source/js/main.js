@@ -316,15 +316,16 @@ var allPlayersArray = [
 
 // array with all current About Match Info
 var allMatchesAboutArray = [
+
     {
         id: 1,
         type: "League",
         rivalTeamName: "Manchester United",
         weAreHomeAway: 1,
-        fulltimeResHomeT: "5",
-        fulltimeResAwayT: "2",
-        halftimeResHomeT: "2",
-        halftimeResAwayT: "2",
+        fulltimeResHomeT: 5,
+        fulltimeResAwayT: 3,
+        halftimeResHomeT: 2,
+        halftimeResAwayT: 2,
         place: "Machester",
         arena: "Old traford",
         date: "2016/07/31",
@@ -335,22 +336,41 @@ var allMatchesAboutArray = [
      {
          id: 2,
          type: "League",
-         rivalTeamName: "Lester City",
+         rivalTeamName: "Liverpool",
          weAreHomeAway: 2,
-         fulltimeResHomeT: "3",
-         fulltimeResAwayT: "3",
-         halftimeResHomeT: "1",
-         halftimeResAwayT: "2",
-         place: "Lester",
-         arena: "Fox",
-         date: "2016/05/22",
-         time: "14:00",
-         attendance: "32000"
-     }
+         fulltimeResHomeT: 0,
+         fulltimeResAwayT: 1,
+         halftimeResHomeT: 0,
+         halftimeResAwayT: 0,
+         place: "Liverpool",
+         arena: "Enfield",
+         date: "2016/05/15",
+         time: "15:00",
+         attendance: "42000"
+     },
+
+      {
+          id: 3,
+          type: "Champions league",
+          rivalTeamName: "Juventus",
+          weAreHomeAway: 2,
+          fulltimeResHomeT: 3,
+          fulltimeResAwayT: 5,
+          halftimeResHomeT: 2,
+          halftimeResAwayT: 2,
+          place: "Torino",
+          arena: "Stadio Olimpico di Torino",
+          date: "2016/05/01",
+          time: "20:45",
+          attendance: "47000"
+      }
+
+
 ];
 
 // array with all current Lineups
 var allMatchesLineupArray = [
+    ///////////////*****************  vs Manchester United *************///////////////////////
     {
         playerId: 1,
         matchId: 1,
@@ -657,7 +677,619 @@ var allMatchesLineupArray = [
         assists: []
     },
 
-   
+ //////////////////*************** vs Liverpool ********************//////////////////////
+        {
+            playerId: 1,
+            matchId: 2,
+            start11: true,
+            captain: false,
+            manOfTheMatch: false,
+            playerGoals: 0,
+            playersAssist: 0,
+            yellow: 34,
+            secondYellow: 0,
+            red: 0,
+            inGame: 0,
+            outGame: 0,
+            goals: [],
+            assists: []
+        },
+
+        {
+            playerId: 4,
+            matchId: 2,
+            start11: true,
+            captain: false,
+            manOfTheMatch: false,
+            playerGoals: 0,
+            playersAssist: 0,
+            yellow: 12,
+            secondYellow: 75,
+            red: 0,
+            inGame: 0,
+            outGame: 0,
+            goals: [],
+            assists: []
+        },
+
+        {
+            playerId: 5,
+            matchId: 2,
+            start11: true,
+            captain: false,
+            manOfTheMatch: false,
+            playerGoals: 0,
+            playersAssist: 0,
+            yellow: 55,
+            secondYellow: 0,
+            red: 0,
+            inGame: 0,
+            outGame: 89,
+            goals: [77],
+            assists: []
+        },
+
+        {
+            playerId: 6,
+            matchId: 2,
+            start11: true,
+            captain: true,
+            manOfTheMatch: true,
+            playerGoals: 0,
+            playersAssist: 0,
+            yellow: 0,
+            secondYellow: 0,
+            red: 0,
+            inGame: 0,
+            outGame: 0,
+            goals: [],
+            assists: [77]
+        },
+
+        {
+            playerId: 7,
+            matchId: 2,
+            start11: true,
+            captain: false,
+            manOfTheMatch: false,
+            playerGoals: 0,
+            playersAssist: 0,
+            yellow: 0,
+            secondYellow: 0,
+            red: 0,
+            inGame: 0,
+            outGame: 0,
+            goals: [],
+            assists: []
+        },
+
+        {
+            playerId: 11,
+            matchId: 2,
+            start11: true,
+            captain: false,
+            manOfTheMatch: false,
+            playerGoals: 0,
+            playersAssist: 0,
+            yellow: 0,
+            secondYellow: 0,
+            red: 0,
+            inGame: 0,
+            outGame: 0,
+            goals: [],
+            assists: []
+        },
+
+        {
+            playerId: 12,
+            matchId: 2,
+            start11: true,
+            captain: false,
+            manOfTheMatch: false,
+            playerGoals: 0,
+            playersAssist: 0,
+            yellow: 0,
+            secondYellow: 0,
+            red: 0,
+            inGame: 0,
+            outGame: 0,
+            goals: [],
+            assists: []
+        },
+
+        {
+            playerId: 13,
+            matchId: 2,
+            start11: true,
+            captain: false,
+            manOfTheMatch: false,
+            playerGoals: 0,
+            playersAssist: 0,
+            yellow: 33,
+            secondYellow: 0,
+            red: 0,
+            inGame: 0,
+            outGame: 46,
+            goals: [],
+            assists: []
+        },
+
+        {
+            playerId: 14,
+            matchId: 2,
+            start11: true,
+            captain: false,
+            manOfTheMatch: false,
+            playerGoals: 0,
+            playersAssist: 0,
+            yellow: 78,
+            secondYellow: 0,
+            red: 0,
+            inGame: 0,
+            outGame: 0,
+            goals: [],
+            assists: []
+        },
+
+        {
+            playerId: 18,
+            matchId: 2,
+            start11: true,
+            captain: false,
+            manOfTheMatch: false,
+            playerGoals: 0,
+            playersAssist: 0,
+            yellow: 0,
+            secondYellow: 0,
+            red: 0,
+            inGame: 0,
+            outGame: 62,
+            goals: [],
+            assists: []
+        },
+
+        {
+            playerId: 19,
+            matchId: 2,
+            start11: true,
+            captain: false,
+            manOfTheMatch: false,
+            playerGoals: 0,
+            playersAssist: 0,
+            yellow: 0,
+            secondYellow: 0,
+            red: 0,
+            inGame: 0,
+            outGame: 0,
+            goals: [],
+            assists: []
+        },
+
+        {
+            playerId: 2,
+            matchId: 2,
+            start11: false,
+            captain: false,
+            manOfTheMatch: false,
+            playerGoals: 0,
+            playersAssist: 0,
+            yellow: 0,
+            secondYellow: 0,
+            red: 0,
+            inGame: 0,
+            outGame: 0,
+            goals: [],
+            assists: []
+        },
+
+        {
+            playerId: 8,
+            matchId: 2,
+            start11: false,
+            captain: false,
+            manOfTheMatch: false,
+            playerGoals: 0,
+            playersAssist: 0,
+            yellow: 0,
+            secondYellow: 0,
+            red: 0,
+            inGame: 0,
+            outGame: 0,
+            goals: [],
+            assists: []
+        },
+
+        {
+            playerId: 9,
+            matchId: 2,
+            start11: false,
+            captain: false,
+            manOfTheMatch: false,
+            playerGoals: 0,
+            playersAssist: 0,
+            yellow: 0,
+            secondYellow: 0,
+            red: 0,
+            inGame: 0,
+            outGame: 0,
+            goals: [],
+            assists: []
+        },
+
+        {
+            playerId: 15,
+            matchId: 2,
+            start11: false,
+            captain: false,
+            manOfTheMatch: false,
+            playerGoals: 0,
+            playersAssist: 0,
+            yellow: 0,
+            secondYellow: 0,
+            red: 0,
+            inGame: 79,
+            outGame: 0,
+            goals: [],
+            assists: []
+        },
+
+        {
+            playerId: 16,
+            matchId: 2,
+            start11: false,
+            captain: false,
+            manOfTheMatch: false,
+            playerGoals: 0,
+            playersAssist: 0,
+            yellow: 72,
+            secondYellow: 0,
+            red: 0,
+            inGame: 46,
+            outGame: 0,
+            goals: [],
+            assists: []
+        },
+
+        {
+            playerId: 17,
+            matchId: 2,
+            start11: false,
+            captain: false,
+            manOfTheMatch: false,
+            playerGoals: 0,
+            playersAssist: 0,
+            yellow: 0,
+            secondYellow: 0,
+            red: 90,
+            inGame: 75,
+            outGame: 0,
+            goals: [],
+            assists: []
+        },
+
+        {
+            playerId: 20,
+            matchId: 2,
+            start11: false,
+            captain: false,
+            manOfTheMatch: false,
+            playerGoals: 0,
+            playersAssist: 0,
+            yellow: 0,
+            secondYellow: 0,
+            red: 0,
+            inGame: 0,
+            outGame: 0,
+            goals: [],
+            assists: []
+        },
+
+          ///////////////*****************  vs Manchester United *************///////////////////////
+    {
+        playerId: 1,
+        matchId: 1,
+        start11: true,
+        captain: false,
+        manOfTheMatch: false,
+        playerGoals: 0,
+        playersAssist: 0,
+        yellow: 34,
+        secondYellow: 0,
+        red: 0,
+        inGame: 0,
+        outGame: 0,
+        goals: [],
+        assists: []
+    },
+
+    {
+        playerId: 4,
+        matchId: 3,
+        start11: true,
+        captain: false,
+        manOfTheMatch: false,
+        playerGoals: 0,
+        playersAssist: 0,
+        yellow: 12,
+        secondYellow: 75,
+        red: 0,
+        inGame: 0,
+        outGame: 0,
+        goals: [],
+        assists: []
+    },
+
+    {
+        playerId: 5,
+        matchId: 3,
+        start11: true,
+        captain: false,
+        manOfTheMatch: false,
+        playerGoals: 0,
+        playersAssist: 0,
+        yellow: 55,
+        secondYellow: 0,
+        red: 0,
+        inGame: 0,
+        outGame: 89,
+        goals: [21],
+        assists: []
+    },
+
+    {
+        playerId: 6,
+        matchId: 3,
+        start11: true,
+        captain: true,
+        manOfTheMatch: false,
+        playerGoals: 0,
+        playersAssist: 0,
+        yellow: 0,
+        secondYellow: 0,
+        red: 0,
+        inGame: 0,
+        outGame: 0,
+        goals: [],
+        assists: []
+    },
+
+    {
+        playerId: 7,
+        matchId: 3,
+        start11: true,
+        captain: false,
+        manOfTheMatch: false,
+        playerGoals: 0,
+        playersAssist: 0,
+        yellow: 0,
+        secondYellow: 0,
+        red: 0,
+        inGame: 0,
+        outGame: 0,
+        goals: [],
+        assists: []
+    },
+
+    {
+        playerId: 11,
+        matchId: 3,
+        start11: true,
+        captain: false,
+        manOfTheMatch: false,
+        playerGoals: 0,
+        playersAssist: 0,
+        yellow: 0,
+        secondYellow: 0,
+        red: 0,
+        inGame: 0,
+        outGame: 0,
+        goals: [42],
+        assists: []
+    },
+
+    {
+        playerId: 12,
+        matchId: 3,
+        start11: true,
+        captain: false,
+        manOfTheMatch: false,
+        playerGoals: 0,
+        playersAssist: 0,
+        yellow: 0,
+        secondYellow: 0,
+        red: 0,
+        inGame: 0,
+        outGame: 0,
+        goals: [],
+        assists: [42]
+    },
+
+    {
+        playerId: 13,
+        matchId: 3,
+        start11: true,
+        captain: false,
+        manOfTheMatch: false,
+        playerGoals: 0,
+        playersAssist: 0,
+        yellow: 33,
+        secondYellow: 0,
+        red: 0,
+        inGame: 0,
+        outGame: 46,
+        goals: [],
+        assists: []
+    },
+
+    {
+        playerId: 14,
+        matchId: 3,
+        start11: true,
+        captain: false,
+        manOfTheMatch: false,
+        playerGoals: 0,
+        playersAssist: 0,
+        yellow: 78,
+        secondYellow: 0,
+        red: 0,
+        inGame: 0,
+        outGame: 0,
+        goals: [],
+        assists: [33]
+    },
+
+    {
+        playerId: 18,
+        matchId: 3,
+        start11: true,
+        captain: false,
+        manOfTheMatch: false,
+        playerGoals: 0,
+        playersAssist: 0,
+        yellow: 0,
+        secondYellow: 0,
+        red: 0,
+        inGame: 0,
+        outGame: 62,
+        goals: [],
+        assists: [44]
+    },
+
+    {
+        playerId: 19,
+        matchId: 3,
+        start11: true,
+        captain: false,
+        manOfTheMatch: true,
+        playerGoals: 0,
+        playersAssist: 0,
+        yellow: 0,
+        secondYellow: 0,
+        red: 0,
+        inGame: 0,
+        outGame: 0,
+        goals: [33, 44],
+        assists: [75]
+    },
+
+    {
+        playerId: 2,
+        matchId: 3,
+        start11: false,
+        captain: false,
+        manOfTheMatch: false,
+        playerGoals: 0,
+        playersAssist: 0,
+        yellow: 0,
+        secondYellow: 0,
+        red: 0,
+        inGame: 0,
+        outGame: 0,
+        goals: [],
+        assists: []
+    },
+
+    {
+        playerId: 8,
+        matchId: 3,
+        start11: false,
+        captain: false,
+        manOfTheMatch: false,
+        playerGoals: 0,
+        playersAssist: 0,
+        yellow: 0,
+        secondYellow: 0,
+        red: 0,
+        inGame: 0,
+        outGame: 0,
+        goals: [],
+        assists: []
+    },
+
+    {
+        playerId: 9,
+        matchId: 3,
+        start11: false,
+        captain: false,
+        manOfTheMatch: false,
+        playerGoals: 0,
+        playersAssist: 0,
+        yellow: 0,
+        secondYellow: 0,
+        red: 0,
+        inGame: 0,
+        outGame: 0,
+        goals: [],
+        assists: []
+    },
+
+    {
+        playerId: 15,
+        matchId: 3,
+        start11: false,
+        captain: false,
+        manOfTheMatch: false,
+        playerGoals: 0,
+        playersAssist: 0,
+        yellow: 0,
+        secondYellow: 0,
+        red: 0,
+        inGame: 79,
+        outGame: 0,
+        goals: [],
+        assists: [83]
+    },
+
+    {
+        playerId: 16,
+        matchId: 3,
+        start11: false,
+        captain: false,
+        manOfTheMatch: false,
+        playerGoals: 0,
+        playersAssist: 0,
+        yellow: 72,
+        secondYellow: 0,
+        red: 0,
+        inGame: 46,
+        outGame: 0,
+        goals: [],
+        assists: []
+    },
+
+    {
+        playerId: 17,
+        matchId: 3,
+        start11: false,
+        captain: false,
+        manOfTheMatch: false,
+        playerGoals: 0,
+        playersAssist: 0,
+        yellow: 0,
+        secondYellow: 0,
+        red: 90,
+        inGame: 75,
+        outGame: 0,
+        goals: [85],
+        assists: []
+    },
+
+    {
+        playerId: 20,
+        matchId: 3,
+        start11: false,
+        captain: false,
+        manOfTheMatch: false,
+        playerGoals: 0,
+        playersAssist: 0,
+        yellow: 0,
+        secondYellow: 0,
+        red: 0,
+        inGame: 0,
+        outGame: 0,
+        goals: [],
+        assists: []
+    },
 ];
 
 var allScoresByMin = [
@@ -721,7 +1353,76 @@ var allScoresByMin = [
         playerId: "Wayne Mark Rooney",
         assistById: 0,
         minut: 70
-    }
+    },
+
+     {
+         myTeam: true,
+         matchId: 3,
+         playerId: 5,
+         assistById: 6,
+         minut: 77
+     },
+      {
+          myTeam: true,
+          matchId: 3,
+          playerId: 5,
+          assistById: 12,
+          minut: 21
+      },
+
+    {
+        myTeam: true,
+        matchId: 3,
+        playerId: 11,
+        assistById: 14,
+        minut: 34
+    },
+   {
+       myTeam: true,
+       matchId: 3,
+       playerId: 19,
+       assistById: 18,
+       minut: 43
+   },
+
+    {
+        myTeam: true,
+        matchId: 3,
+        playerId: 19,
+        assistById: 15,
+        minut: 77
+    },
+    {
+        myTeam: true,
+        matchId: 3,
+        playerId: 17,
+        assistById: 19,
+        minut: 89
+    },
+
+    {
+        myTeam: false,
+        matchId: 3,
+        playerId: "Higuain",
+        assistById: 0,
+        minut: 21
+    },
+
+    {
+        myTeam: false,
+        matchId: 3,
+        playerId: "Mario Mandzukic",
+        assistById: 0,
+        minut: 61
+    },
+
+    {
+        myTeam: false,
+        matchId: 3,
+        playerId: "Andrea Barzagli",
+        assistById: 0,
+        minut: 70
+    },
 ];
 
 
@@ -905,8 +1606,7 @@ function addAboutMatchToSession() {
     //alert("Step 1. Current: " + currentMatchId + " Last:" + lastMatchID);
     if (typeof (Storage) !== "undefined") { // check if session Storage is supported by the browser
 
-        //  sessionStorage.setItem("sessionAllMatchesAboutMatch", JSON.stringify(allMatchesAboutArray)); //add arrayen to session
-        sessionStorage.setItem("sessionCurrentMatchAbout", JSON.stringify(currentMatchAboutArray)); //add arrayen to session
+         sessionStorage.setItem("sessionCurrentMatchAbout", JSON.stringify(currentMatchAboutArray)); //add arrayen to session
         sessionStorage.setItem("sessionCurrentMatchID", JSON.stringify(currentMatchId)); //add ID to session
     }
 
@@ -1135,10 +1835,12 @@ function loadLineupForm() {
 
         //Adding newPlayer to our section "All players" 
         if (i < 11) {
-            sectionPlayersStart11.appendChild(newPlayerDiv); // start11
+            // start11
+            sectionPlayersStart11.appendChild(newPlayerDiv); 
         }
         else {
-            sectionPlayersReserves.appendChild(newPlayerDiv); // substitutes
+            // substitutes
+            sectionPlayersReserves.appendChild(newPlayerDiv); 
         }
     }
 
@@ -1353,7 +2055,7 @@ function whoScored() {
         sectionAddLineup.appendChild(headline);
         sectionAddLineup.appendChild(selWhoScored);
 
-        // alert(goalsHome + " " + goalsAway);
+     
     }
 }
 
@@ -1512,10 +2214,10 @@ function addLineupToSession() {
         });
     }
 
-    if (typeof (Storage) !== "undefined") { // check if session Storage is supported by the browser
+    if (typeof (Storage) !== "undefined") { 
 
         sessionStorage.setItem("sessionAllMatchAbout", JSON.stringify(allMatchesAboutArray));
-        sessionStorage.setItem("sessionAllLineup", JSON.stringify(allMatchesLineupArray)); //add arrayen to session
+        sessionStorage.setItem("sessionAllLineup", JSON.stringify(allMatchesLineupArray)); 
         sessionStorage.setItem("sessionAllScoreByMin", JSON.stringify(allScoresByMin));
         sessionStorage.setItem("sessionLastMatchID", JSON.stringify(lastMatchID));
     }
@@ -1713,17 +2415,7 @@ function fillMatchInfo() {
     updateAllArrays();
     var matchID = getMatchID('id');
 
-    //for (i = 0; i < allMatchesLineupArray.length; i++) {
-    //    if (allMatchesLineupArray[i].matchId == matchID &&  allMatchesLineupArray[i].manOfTheMatch == true) {
-    //        alert(allMatchesLineupArray[i].playerId);
-    //    }
-    //}
-    //for (i = 0; i < allMatchesAboutArray.length; i++) {
-    //    //alert(allMatchesAboutArray[i].id);
-    //    if (allMatchesAboutArray[i].id == matchID) {
-    //        alert("Date: " + allMatchesAboutArray[i].date + " Time: " + allMatchesAboutArray[i].time);
-    //    }
-    //}
+    
     
 
     var homeTeamName = document.getElementById("matchRpHomeName");
@@ -2121,6 +2813,8 @@ function fillMatchInfo() {
 
 
 }
+
+
 /////////////////////////*****************    Page statistics.html  **********************/////////////////////////////////
 
 // load individual statistics
@@ -2280,9 +2974,7 @@ function loadAllPlayers() {
             var formerClubs = document.createElement("li");
             formerClubs.innerHTML = "<span>Former clubs: </span> ";
             for (z = 0; z < allPlayersArray[i].formerClubs.length; z++) {
-                //var newClub = document.createElement("li");
-                //newClub.innerHTML = allPlayersArray[i].formerClubs[z];
-                //formerClubs.appendChild(newClub);
+                
                 formerClubs.innerHTML += allPlayersArray[i].formerClubs[z] +", "
             }
 
@@ -2356,9 +3048,9 @@ function removePlayer() {
 
 
     // add to session
-    if (typeof (Storage) !== "undefined") { // check if session Storage is supported by the browser
+    if (typeof (Storage) !== "undefined") { 
 
-        sessionStorage.setItem("sessionAllPlayers", JSON.stringify(allPlayersArray)); //add arrayen to session
+        sessionStorage.setItem("sessionAllPlayers", JSON.stringify(allPlayersArray)); 
     }
 
     else {
@@ -2404,9 +3096,7 @@ function removeClub() {
         document.getElementById('oneFormerClubID').removeChild(document.getElementById("divClub" + countClub));
         countClub--;
         
-    } else {
-        //alert("No textbox to remove");
-    }
+    } 
 }
 
 function saveNewPlayer() {
@@ -2468,13 +3158,7 @@ function saveNewPlayer() {
         document.getElementById('result').innerHTML = "Sorry, your browser does not support web storage...";
     }
 
-    //for (x = 0; x < allPlayersArray.length; x++) {
-    //    alert(
-    //        allPlayersArray[x].id + " " + allPlayersArray[x].firstName + " " + allPlayersArray[x].lastName + " " +  allPlayersArray[x].formerClubs[1] + " "
-    //        +  allPlayersArray[x].birthDate + " " +  allPlayersArray[x].birthPlace + " " +  allPlayersArray[x].position + " " +  allPlayersArray[x].height + " " +  allPlayersArray[x].weight + " " +  allPlayersArray[x].nationality
-    //   );
-
-    //}
+   
    
     location.href = "playersList.html";
 }
@@ -2494,7 +3178,7 @@ function removeMatchReport() {
 
             // delete all checked matches from array allMatchesAboutArray
             for (var x = allMatchesAboutArray.length - 1; x >= 0; x--) {
-            //for (var x = 0; x < allMatchesAboutArray.length; x++) {
+           
                 if (allMatchesAboutArray[x].id == checkbox[i].value) {
 
                     allMatchesAboutArray.splice(x, 1);  
@@ -2504,8 +3188,7 @@ function removeMatchReport() {
 
             // delete all checked matches from array allMatchesLineupArray
             for (var x = allMatchesLineupArray.length - 1; x >= 0; x--) {
-                //alert("X = " + x + " AllMatchesLineupArray length" + allMatchesLineupArray.length + " Match ID from array " + allMatchesLineupArray[x].matchId + "value from checkbox " + checkbox[i].value);
-                if (allMatchesLineupArray[x].matchId == checkbox[i].value) {
+                 if (allMatchesLineupArray[x].matchId == checkbox[i].value) {
                     allMatchesLineupArray.splice(x, 1);
                  
                 }
@@ -2526,9 +3209,7 @@ function removeMatchReport() {
         document.getElementById('result').innerHTML = "Sorry, your browser does not support web storage...";
     }
 
-    //for (var x = 0; x < allMatchesLineupArray.length; x++) {
-    //    alert("Match ID:" + allMatchesLineupArray[x].matchId + "   PlayerID: " + allMatchesLineupArray[x].playerId);
-    //}
+   
 
     location.reload();
 }

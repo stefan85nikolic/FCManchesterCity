@@ -15,15 +15,7 @@
     padding: 0px;
 }
 
-input[type=number] {
-    -moz-appearance:textfield;
-}
 
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
 
 html {
     background-image: url('../img/background.jpg');
@@ -38,6 +30,10 @@ body {
     background-color: white;
     min-height: 100vh;
     max-width: 1200px;
+    
+    display: flex;
+   flex-direction: column;
+    
 }
 
 #allPlayers h1,
@@ -64,12 +60,11 @@ h1, h2 {
 }
 
 .adminSeciton h2 {
-     color: #004459;
-    font-size: 18px
-        
+    color: #004459;
+    font-size: 18px;
 }
 
-/***************************************  Inputs ************************/
+/***************************************  Inputs and errors ************************/
 
 input,
 select,
@@ -84,8 +79,7 @@ select {
         width: 40px;
     }
 
-#inpAttendance
-{
+#inpAttendance {
     width: 100px;
 }
 
@@ -95,13 +89,35 @@ select {
 
 .required {
     color: red;
-    padding: 10px
+    padding: 10px;
 }
 
 
-.errorMessage{
+.errorMessage {
     background-color: #FF3333;
 }
+
+#error_message_addAboutMatch {
+    display: none;
+    padding: 20px 20px 20px;
+}
+
+
+
+    #error_message_addAboutMatch li {
+        list-style: inherit;
+        margin-left: 30px;
+    }
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
 /*************************** Header *******************************/
 
 
@@ -166,6 +182,8 @@ main {
     overflow: hidden;
     width: 100%;
     padding: 1% 1% 1% 1%;
+    flex: 1;
+    padding-top: 20px;
 }
 
 #mainContact {
@@ -173,17 +191,7 @@ main {
 }
 
 
-#error_message_addAboutMatch {
-    display: none;
-    padding: 20px 20px 20px;
-}
 
-
-
-#error_message_addAboutMatch li{
-    list-style:inherit;
-    margin-left: 30px;
-}
 
 /*************************************** AdminNav ******************************/
 
@@ -305,7 +313,6 @@ main {
 
     #infoNews article {
         background-color: white;
-        
         width: 100%;
         float: right;
         margin-bottom: 4%;
@@ -345,8 +352,6 @@ main {
     }
 
     .tableList thead th {
-       
-        
         color: #004459;
         font-size: 14px;
         border-left: 1px solid #0070A8;
@@ -382,8 +387,6 @@ tbody tr:nth-child(odd) {
     float: left;
     margin: 1% 1% 1% 1%;
     min-height: 500px;
-    
-    
 }
 
 
@@ -414,21 +417,22 @@ tbody tr:nth-child(odd) {
     }
 
 
-.player figure {
-  position: relative;
-  overflow: hidden;
-}
-.player figure img {
-  -webkit-transition: all 4s ease;
-     -moz-transition: all 4s ease;
-          transition: all 4s ease;
-}
+    .player figure {
+        position: relative;
+        overflow: hidden;
+    }
 
-.player:hover img {
-  -moz-transform: scale(1.5,1.5);
-  -webkit-transform: scale(1.5,1.5);
-  transform: scale(1.5,1.5);
-}
+        .player figure img {
+            -webkit-transition: all 4s ease;
+            -moz-transition: all 4s ease;
+            transition: all 4s ease;
+        }
+
+    .player:hover img {
+        -moz-transform: scale(1.5,1.5);
+        -webkit-transform: scale(1.5,1.5);
+        transform: scale(1.5,1.5);
+    }
 
 /**************************************** addPlayer ************************************/
 #addPlayerForm fieldset {
@@ -436,14 +440,12 @@ tbody tr:nth-child(odd) {
 }
 
 #inpHalfTimeAway,
-#inpFullTimeAway
-{
+#inpFullTimeAway {
     margin-left: 10px;
 }
 
 #inpHalfTimeHome,
-#inpFullTimeHome
-{
+#inpFullTimeHome {
     margin-right: 10px;
 }
 
@@ -466,9 +468,9 @@ tbody tr:nth-child(odd) {
 }
 
 .addPlayersRowDiv {
-    
     padding: 5px 0 5px 0;
 }
+
 #numOFminLbl {
     width: 100%;
     min-height: 30px;
@@ -510,11 +512,11 @@ tbody tr:nth-child(odd) {
 /**************************************** Match Report ************************************/
 #matchRpInfo {
     width: 98%;
-    background-color: #004459; 
+    background-color: #004459;
 }
 
 #matchRpFacts .matchFacts {
-    background-color: #62A7C4; 
+    background-color: #62A7C4;
     display: inline-block;
     width: 16.65%;
     align-content: center;
@@ -522,21 +524,20 @@ tbody tr:nth-child(odd) {
     padding: 8px 0;
     color: #004459;
     font-weight: bold;
-    border-bottom: 1px solid  #F9AF28;
+    border-bottom: 1px solid #F9AF28;
 }
 
 #matchFactContainer {
     display: flex;
     height: 100px;
     margin: 0 10% 0 10%;
-    border-bottom: 1px solid  #F9AF28;
+    border-bottom: 1px solid #F9AF28;
     font-weight: bold;
 }
 
 
 #matchRpHomeName {
     float: left;
-   
     width: 45%;
     text-align: right;
     padding-right: 5%;
@@ -610,9 +611,10 @@ tbody tr:nth-child(odd) {
     padding-left: 2%;
 }
 
-.newAssistPlayer{
-    color: #F9AF28!important;
+.newAssistPlayer {
+    color: #F9AF28 !important;
 }
+
 .newScoreLine {
     width: 100%;
     padding: 5px 0px 5px 0;
@@ -636,14 +638,13 @@ tbody tr:nth-child(odd) {
 
 #matchRpLineup {
     margin: 20px 0 20px 0;
-   
 }
 
 #tabelLineup {
     width: 90%;
     margin: 2% 4% 2% 4%;
     border-collapse: collapse;
-     background-color: #62A7C4;
+    background-color: #62A7C4;
 }
 
     #tabelLineup td {
@@ -663,23 +664,22 @@ tbody tr:nth-child(odd) {
         border-bottom: solid 1px #004459;
     }
 
-#tabelLineup thead th {
-    background-color: #004459;
-    border-bottom: solid 1px #F9AF28;
-    color: #F9AF28;
-    
-}
+    #tabelLineup thead th {
+        background-color: #004459;
+        border-bottom: solid 1px #F9AF28;
+        color: #F9AF28;
+    }
 
     #rowSubstitutes,
     #tabelLineup th {
         background-color: #004459;
         color: #F9AF28;
-        padding: 2px 0 2px 0 ;
+        padding: 2px 0 2px 0;
     }
 
 #rowSubstitutes {
     border-right: solid 1px #004459;
-     border-left: solid 1px #004459;
+    border-left: solid 1px #004459;
 }
 
 
@@ -697,9 +697,9 @@ tbody tr:nth-child(odd) {
 
     #matchRpManOfTheMatch h2 {
         text-align: center;
-        color: #F9AF28!important;
-         font-weight: bold;
-       font-size: 18px;
+        color: #F9AF28 !important;
+        font-weight: bold;
+        font-size: 18px;
     }
 
 #imgBestPlayer {
@@ -737,14 +737,13 @@ tbody tr:nth-child(odd) {
     float: left;
     width: 30%;
     border-left: 1px solid;
-    
 }
 
     #divRightPlayerInfo ul {
         padding-left: 20%;
     }
 
-/***************     Share buttons ********************/
+/*************************************** Share buttons ******************************/
 #matchRpShare {
     background-color: #62A7C4;
     clear: both;
@@ -760,11 +759,11 @@ tbody tr:nth-child(odd) {
     padding: 5px 0 5px;
 }
 
-#shareHeadline h2 {
-    color: #F9AF28!important;
-    font-weight: bold;
-    font-size: 18px;
-}
+    #shareHeadline h2 {
+        color: #F9AF28 !important;
+        font-weight: bold;
+        font-size: 18px;
+    }
 
 #matchRpShare shareButtons {
 }
@@ -773,7 +772,7 @@ tbody tr:nth-child(odd) {
     padding: 15px;
 }
 
-/*************************************** Share buttons ******************************/
+
 ul.share-buttons {
     list-style: none;
     padding: 0;
@@ -817,38 +816,38 @@ footer {
 /********************** Buttons *****************/
 
 .mainBtn {
-	-moz-box-shadow: 0px 1px 0px 0px #fff6af;
-	-webkit-box-shadow: 0px 1px 0px 0px #fff6af;
-	box-shadow: 0px 1px 0px 0px #fff6af;
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffdd00), color-stop(1, #ffab23));
-	background:-moz-linear-gradient(top, #ffdd00 5%, #ffab23 100%);
-	background:-webkit-linear-gradient(top, #ffdd00 5%, #ffab23 100%);
-	background:-o-linear-gradient(top, #ffdd00 5%, #ffab23 100%);
-	background:linear-gradient(to bottom, #ffdd00 5%, #ffab23 100%);
-	background-color:#ffdd00;
-	-moz-border-radius:6px;
-	-webkit-border-radius:6px;
-	border-radius:6px;
-	border:1px solid #f9b028;
-	display:inline-block;
-	cursor:pointer;
-	color:#004459;
-	font-family:Arial;
-	font-size:14px;
-	font-weight:bold;
-	padding:2px 10px 2px;;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #ffee66;
+    -moz-box-shadow: 0px 1px 0px 0px #fff6af;
+    -webkit-box-shadow: 0px 1px 0px 0px #fff6af;
+    box-shadow: 0px 1px 0px 0px #fff6af;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffdd00), color-stop(1, #ffab23));
+    background: -moz-linear-gradient(top, #ffdd00 5%, #ffab23 100%);
+    background: -webkit-linear-gradient(top, #ffdd00 5%, #ffab23 100%);
+    background: -o-linear-gradient(top, #ffdd00 5%, #ffab23 100%);
+    background: linear-gradient(to bottom, #ffdd00 5%, #ffab23 100%);
+    background-color: #ffdd00;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #f9b028;
+    display: inline-block;
+    cursor: pointer;
+    color: #004459;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 2px 10px 2px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffee66;
     margin: 10px 0 10px 5px;
 }
 
-.mainBtn:hover {
-	background:-moz-linear-gradient(top, #ffab23 5%, #ffdd00 100%);
-	background:-webkit-linear-gradient(top, #ffab23 5%, #ffdd00 100%);
-	background:-o-linear-gradient(top, #ffab23 5%, #ffdd00 100%);
-	background:linear-gradient(to bottom, #ffab23 5%, #ffdd00 100%);
-	background-color:#ffab23;
-}
+    .mainBtn:hover {
+        background: -moz-linear-gradient(top, #ffab23 5%, #ffdd00 100%);
+        background: -webkit-linear-gradient(top, #ffab23 5%, #ffdd00 100%);
+        background: -o-linear-gradient(top, #ffab23 5%, #ffdd00 100%);
+        background: linear-gradient(to bottom, #ffab23 5%, #ffdd00 100%);
+        background-color: #ffab23;
+    }
 
 
 
@@ -856,12 +855,38 @@ footer {
 /* Styles for  screen min 300 and smaller*/
 @media only screen and (max-width: 300px) {
 
-     html {
+    html {
         background: none;
     }
+
     body {
         max-width: 300px;
     }
+
+    .containerHeader {
+        height: 70px;
+    }
+
+        .containerHeader h1 {
+            font-size: 0;
+        }
+
+
+
+    nav li {
+        width: 30%;
+        padding: 0;
+        font-size: 12px;
+    }
+
+    .adminNav {
+        width: 98%;
+    }
+
+        .adminNav li {
+            display: inline-block;
+            width: 48%;
+        }
 
     .player {
         width: 95%;
@@ -908,37 +933,7 @@ footer {
         width: 100%;
     }
 
-    .containerHeader {
-        height: 70px;
-    }
 
-    .containerHeader h1 {
-        font-size: 0;
-    }
-
-    footer {
-        height: 90px;
-    }
-
-        footer p {
-            font-size: 0.7em;
-            padding: 10px;
-        }
-
-    nav li {
-        width: 30%;
-        padding: 0;
-        font-size: 12px;
-    }
-
-    .adminNav {
-        width: 98%;
-    }
-
-        .adminNav li {
-            display: inline-block;
-            width: 48%;
-        }
 
     .tableList thead th {
         font-size: 0;
@@ -994,14 +989,24 @@ footer {
         #tabelLineup img {
             height: 50%;
         }
+
+    footer {
+        height: 90px;
+    }
+
+        footer p {
+            font-size: 0.7em;
+            padding: 10px;
+        }
 }
 
 
 /* Styles for  screen min 300 px and max 480px */
 @media only screen and (min-width: 300px) and (max-width: 480px) {
- html {
+    html {
         background: none;
     }
+
     body {
         max-width: 480px;
     }
@@ -1031,10 +1036,6 @@ footer {
         font-size: 1.3em;
         padding: 0;
     }
-
-
-
-    
 
     nav li a {
         padding: 10px 15px;
@@ -1099,9 +1100,9 @@ footer {
         height: 100px;
     }
 
-    .containerHeader h1 {
-        font-size: 0.6em;
-    }
+        .containerHeader h1 {
+            font-size: 0.6em;
+        }
 
     footer {
         height: 90px;
@@ -1160,7 +1161,7 @@ footer {
         height: 70px;
     }
 
-   
+
 
     nav li a {
         padding: 10px 20px;
@@ -1219,9 +1220,9 @@ footer {
         height: 130px;
     }
 
-    .containerHeader h1 {
-        font-size: 1.1em;
-    }
+        .containerHeader h1 {
+            font-size: 1.1em;
+        }
 
     nav li {
         width: 17%;
@@ -1234,8 +1235,6 @@ footer {
     body {
         max-width: 960px;
     }
-    
-   
 
 
 
@@ -1259,4 +1258,3 @@ footer {
             padding: 2% 0% 2% 0;
         }
 }
-
